@@ -1,17 +1,33 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
 
+import Research from "../sections/Research.astro";
+import Communication from "../sections/Communication.astro";
+import Teaching from "../sections/Teaching.astro";
+import Hobbies from "../sections/Hobbies.astro";
+
+import { profile } from "../config";
+
+const year = new Date().getFullYear();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title={profile.name}
+  description={`Personal academic website of ${profile.name}.`}
+>
+  <div class="page">
+    <Header />
+
+    <main>
+      <Research />
+      <Communication />
+      <Teaching />
+      <Hobbies />
+    </main>
+
+    <footer>
+      © {year} {profile.name}
+    </footer>
+  </div>
+</BaseLayout>
