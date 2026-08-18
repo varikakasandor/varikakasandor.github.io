@@ -1,9 +1,8 @@
 export const profile = {
     name: "Andor Vári-Kakas",
-    role: "PhD student in Theoretical Computer Science",
-    affiliation: "ETH Zürich",
+    role: "PhD Student at ETH Zürich",
   
-    email: "avarikakas (at) inf (dot) ethz (dot) ch",
+    email: "avarikakas (at) inf.ethz.ch",
     linkedin: "https://www.linkedin.com/in/andor-vari-kakas/",
     scholar: "https://scholar.google.com/citations?user=-DkMoPUAAAAJ",
   

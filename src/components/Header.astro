@@ -7,27 +7,19 @@ import { profile } from "../config";
     class="profile-photo"
     src={profile.photo}
     alt={`Portrait of ${profile.name}`}
-    width="180"
-    height="180"
+    width="170"
+    height="170"
   />
 
   <div>
     <p class="role">{profile.role}</p>
     <h1>{profile.name}</h1>
-    <p class="affiliation">{profile.affiliation}</p>
+    <p class="affiliation">{profile.email}</p>
 
     <nav class="profile-links" aria-label="Profile links">
-      <a href={`mailto:${profile.email}`}>Email</a>
       <a href={profile.scholar}>Google Scholar</a>
       <a href={profile.linkedin}>LinkedIn</a>
       <a href={profile.cv}>CV</a>
-    </nav>
-
-    <nav class="section-links" aria-label="Page sections">
-      <a href="#research">Research</a>
-      <a href="#communication">Science communication</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#hobbies">Outside research</a>
     </nav>
   </div>
 </header>
